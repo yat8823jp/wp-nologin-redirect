@@ -20,6 +20,7 @@ function no_login_redirect($content){
 	$id = $post->ID;
 	$status = $post -> post_status;
 	if( is_user_logged_in() ){
+		//
 		return ' <span class="f12 red">[' . $id . ']</span>' . $content;
 	}
 	return $content;
