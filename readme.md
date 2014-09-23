@@ -1,5 +1,5 @@
     === wp-nologin-redirect ===
-    Contributors: YAT mel_cha
+    Contributors: YAT, mel_cha
     Tags: nologin,redirect
     Requires at least: 3.9.2
     Tested up to: 4.0
