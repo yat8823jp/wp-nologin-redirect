@@ -16,15 +16,11 @@ function theme_name_script(){
 add_action( 'wp_enqueue_scripts' , 'theme_name_script');
 
 function no_login_redirect($content){
-	global $post;
-	$id = $post->ID;
-	$status = $post -> post_status;
-	if( is_user_logged_in() ){
-		//
-		return ' <span class="f12 red">[' . $id . ']</span>' . $content;
+	if( !is_user_logged_in() ){
+		$url = ( empty( $_SERVER["HTTPS"] ) ? 'http://' : 'https://' ) . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
+		wp_safe_redirect( wp_login_url( $url ) );
 	}
-	return $content;
 }
 
-add_filter('the_content','no_login_redirect');
+add_action('wp_head', 'no_login_redirect');
 ?>
