@@ -23,10 +23,10 @@ Be to login, redirected back to the URL you were trying to access.
  
 == Changelog ==
 
-= 1.1.3=
+= 1.1.3 =
 * 2014-09-30 Change init at the timing of the redirect
 
-= 1.1.2=
+= 1.1.2 =
 * 2014-09-30 redirect add exit
 
 = 1.1.0 =
