@@ -24,5 +24,5 @@ function nlr_no_login_redirect($content){
 	}
 }
 
-add_action( 'wp_loaded', 'nlr_no_login_redirect' );
+add_action( 'init', 'nlr_no_login_redirect' );
 ?>
