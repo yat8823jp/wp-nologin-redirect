@@ -1,7 +1,7 @@
 <?php
 /**
  * @package no-login-redirect
- * @version 1.0
+ * @version 1.1.3
 **/
 /*
 Plugin Name:no-login-redirect
