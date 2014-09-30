@@ -19,6 +19,7 @@ function nlr_no_login_redirect($content){
 	if( !is_user_logged_in() ){
 		$url = ( empty( $_SERVER["HTTPS"] ) ? 'http://' : 'https://' ) . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 		wp_safe_redirect( wp_login_url( $url ) );
+		exit;
 	}
 }
 
