@@ -1,3 +1,6 @@
 /* no-login-redirect */
-.f12{font-size:12px;}
-.red{color:red;}
+
+.login-attention {
+	font-size: 16px;
+	margin-bottom: 20px;
+}
