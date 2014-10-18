@@ -24,7 +24,7 @@ add_action( 'init', 'nlr_no_login_redirect' );
 
 function nlr_add_login_message( $message ) {
 	if ( empty($message) ){
-		return '<p class="login-attention">'.__( 'Welcome to this site. Please log in to continue', 'no-login-redirect' ).'</p>';
+		return '<p class="login-attention">'.__( 'If you want to view this site, You must login.', 'no-login-redirect' ).'</p>';
 	} else {
 		return $message;
 	}
