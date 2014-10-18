@@ -22,14 +22,14 @@ function nlr_no_login_redirect( $content ) {
 }
 add_action( 'init', 'nlr_no_login_redirect' );
 
-function the_login_message( $message ) {
+function nlr_add_login_message( $message ) {
 	if ( empty($message) ){
 		return '<p class="login-attention">'.__( 'Welcome to this site. Please log in to continue', 'no-login-redirect' ).'</p>';
 	} else {
 		return $message;
 	}
 }
-add_filter( 'login_message', 'the_login_message' );
+add_filter( 'login_message', 'nlr_add_login_message' );
 
 
 ?>
