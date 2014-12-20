@@ -3,8 +3,8 @@ Contributors: yat8823jp, mel_cha
 
 Tags: nologin,redirect
 Requires at least: 3.9.2
-Tested up to: 4.0
-Stable tag: 4.0
+Tested up to: 4.1
+Stable tag: 4.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -22,6 +22,9 @@ Be to login, redirected back to the URL you were trying to access.
  
  
 == Changelog ==
+
+= 2.1 =
+* Internationalization of login message
 
 = 2.0 =
 * add login message
