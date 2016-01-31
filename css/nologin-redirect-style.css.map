@@ -1,0 +1,1 @@
+{"version":3,"sources":["nologin-redirect-style.scss"],"names":[],"mappings":"AAAA,iBACC,eAAgB,AAChB,kBAAoB,CACpB,AAED,MACC,eAAiB,CAIjB,AALD,eAGE,SAAW,CACX","file":"nologin-redirect-style.css","sourcesContent":[".login-attention {\n\tfont-size: 16px;\n\tmargin-bottom: 20px;\n}\n\n.wrap {\n\tbackground: #f00;\n\ttextarea {\n\t\twidth: 80%;\n\t}\n}\n"],"sourceRoot":"/source/"}

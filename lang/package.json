@@ -1,0 +1,26 @@
+{
+  "name": "gulp-ejs",
+  "version": "1.0.1",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Chiaki Obara and YAT",
+  "license": "MIT",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-sass": "^2.1.0",
+    "browser-sync": "^2.8.2",
+    "gulp-plumber": "^1.0.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-imagemin": "^2.3.0",
+    "imagemin-pngquant": "^4.1.2",
+    "gulp-pleeease": "^2.0.1",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-minify-css": "^1.2.0"
+  },
+  "dependencies": {
+    "gulp-watch": "^4.3.5"
+  }
+}
