@@ -23,6 +23,9 @@ Be to login, redirected back to the URL you were trying to access.
      
 == Changelog ==  
 
+= 2.2 =
+* 2015-07-28 Tested up to WordPress 4.2
+
 = 2.1 =
 * Internationalization of login message
 
