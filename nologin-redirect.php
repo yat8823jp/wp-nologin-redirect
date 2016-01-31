@@ -4,7 +4,7 @@ Plugin Name: No Login Redirect
 Plugin URI:
 Description: 非ログイン時、ログイン画面にリダイレクトさせる
 Author: YAT, mel_cha
-Version: 2.3
+Version: 3.0
 Text Domain: wp-nologin-redirect
 */
 function nlr_theme_name_script() {
@@ -50,6 +50,7 @@ function nlr_options( $message ) {
 	<h2><?php echo __( 'wp-nologin-redirect menu' , 'wp-nologin-redirect' ); ?></h2>
 
 	<p><?php echo __( 'Type the message that you want to display the login screen.' , 'wp-nologin-redirect' ) ?></p>
+	<p><?php echo __( 'If there is no input " Welcome to this site. Please log in to continue " it will be the standard' , 'wp-nologin-redirect' ) ?></p>
 	<form action="" id="nlr-menu-form" method="post">
 		<?php wp_nonce_field( 'nlr-nonce-key', 'nlr-menu' ); ?>
 		<?php
