@@ -4,8 +4,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: No Login Redirect 2.1\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/plugins/wp-nologin-redirect/\n"
-"POT-Creation-Date: 2016-01-31 22:48+0900\n"
-"PO-Revision-Date: 2016-01-31 22:50+0900\n"
+"POT-Creation-Date: 2016-02-01 01:03+0900\n"
+"PO-Revision-Date: 2016-02-01 01:03+0900\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ja_JP\n"
@@ -19,23 +19,27 @@ msgstr ""
 "X-Poedit-Basepath: .\n"
 "X-Poedit-SearchPath-0: ..\n"
 
-#: ../nologin-redirect.php:44
+#: ../nologin-redirect.php:45
 msgid "You do not have sufficient permissions to access this page."
 msgstr ""
 "このページにアクセスするために、十分なアクセンセス権利を持っていません。"
 
-#: ../nologin-redirect.php:49
+#: ../nologin-redirect.php:50
 msgid "wp-nologin-redirect menu"
 msgstr "wp-nologin-redirectメニュー"
 
-#: ../nologin-redirect.php:50
+#: ../nologin-redirect.php:52
 msgid "Type the message that you want to display the login screen."
 msgstr "ログイン画面に表示するメッセージを入力してください。"
 
-#: ../nologin-redirect.php:57
+#: ../nologin-redirect.php:59
 msgid "Welcome to this site. Please log in to continue"
 msgstr "ウェブサイトにようこそ。閲覧するにはログインしてください。"
 
-#: ../nologin-redirect.php:61
+#: ../nologin-redirect.php:63
 msgid "Save"
 msgstr "保存"
+
+#: ../nologin-redirect.php:89
+msgid "saved the message"
+msgstr "メッセージを保存しましました"

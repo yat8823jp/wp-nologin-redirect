@@ -38,8 +38,9 @@ function nlr_add_menu() {
 		'nlr_options'
 	);
 }//nlr_add_menu
-function nlr_options( $message ) {
+add_action( 'admin_menu', 'nlr_add_menu' );
 
+function nlr_options( $message ) {
 	if (! current_user_can( 'activate_plugins' ) ) {
 		wp_die( __( 'You do not have sufficient permissions to access this page.' ), 'wp-nologin-redirect' );
 	}
@@ -47,6 +48,7 @@ function nlr_options( $message ) {
 
 	<div class="wrap">
 	<h2><?php echo __( 'wp-nologin-redirect menu' , 'wp-nologin-redirect' ); ?></h2>
+
 	<p><?php echo __( 'Type the message that you want to display the login screen.' , 'wp-nologin-redirect' ) ?></p>
 	<form action="" id="nlr-menu-form" method="post">
 		<?php wp_nonce_field( 'nlr-nonce-key', 'nlr-menu' ); ?>
@@ -75,15 +77,18 @@ function nlr_add_login_message() {
 }//nlr_add_login_message
 add_filter( 'login_message', 'nlr_add_login_message' );
 
-add_action( 'admin_menu', 'nlr_add_menu' );
-add_action( 'admin_init', 'nlr_init' );
-
 function nlr_init() {
 	if( isset( $_POST['nlr-menu'] ) && $_POST['nlr-menu'] ) {
 		if( check_admin_referer( 'nlr-nonce-key', 'nlr-menu' ) ) {
+			$e = new WP_Error();
 
 			if ( isset( $_POST['nlrdata'] ) && $_POST['nlrdata'] ) {
 				update_option( 'nlrdata', $_POST['nlrdata'] );
+				$e->add(
+					'error',
+					__( 'saved the message', 'wp-nologin-redirect' )
+				);
+				set_transient( 'nlr-admin-errors', $e->get_error_messages(), 10 );
 			} else {
 				update_option( 'nlrdata', '' );
 			}//if
@@ -92,5 +97,20 @@ function nlr_init() {
 		}//if
 	}//if
 }//nlr_init
+add_action( 'admin_init', 'nlr_init' );
 
+function nlr_admin_notices() {
+	if( $messages = get_transient( 'nlr-admin-errors' ) ) {
+?>
+	<div class="updated">
+		<ul>
+	<?php foreach( $messages as $message ) { ?>
+			<li><?php echo esc_html($message); ?></li>
+	<?php }//foreach ?>
+		</ul>
+	</div>
+<?php
+	}//if
+}//nlr_admin_notices
+add_action( 'admin_notices', 'nlr_admin_notices' );
 ?>
