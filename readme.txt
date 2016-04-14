@@ -3,8 +3,8 @@ Contributors: yat8823jp, mel_cha
 
 Tags: nologin,redirect
 Requires at least: 3.9.2
-Tested up to: 4.4.1
-Stable tag: 4.4.1
+Tested up to: 4.5.0
+Stable tag: 4.5.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -29,6 +29,9 @@ Be to login, redirected back to the URL you were trying to access.
 
 
 == Changelog ==
+
+= 3.1 =
+* Tested up to WordPress 4.5.0
 
 = 3.0 =
 * 2016-01-31 Added to the management menu.
