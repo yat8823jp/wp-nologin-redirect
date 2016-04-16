@@ -30,6 +30,9 @@ Be to login, redirected back to the URL you were trying to access.
 
 == Changelog ==
 
+= 3.1.1 =
+* A message revises an error not to be given
+
 = 3.1 =
 * Tested up to WordPress 4.5.0
 
