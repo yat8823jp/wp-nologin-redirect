@@ -4,7 +4,7 @@ Plugin Name: No Login Redirect
 Plugin URI:
 Description: 非ログイン時、ログイン画面にリダイレクトさせる
 Author: YAT, mel_cha
-Version: 3.1.1
+Version: 3.1.2
 Text Domain: wp-nologin-redirect
 */
 function nlr_theme_name_script() {
