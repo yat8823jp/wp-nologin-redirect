@@ -1,6 +1,6 @@
   === wp-nologin-redirect ===
 
-Contributors: yat8823jp, mel_cha 
+Contributors: yat8823jp, mel_cha
 Tags: nologin,redirect  
 Requires at least: 3.9.2  
 Tested up to: 4.5.0  
@@ -12,23 +12,26 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 When you access in the state where you are not logged in, and redirected to the login screen.  
 Be to login, redirected back to the URL you were trying to access.  
 
-2016-01-31 update Added to the management menu. To be able to edit the login message. 
-    
+2016-01-31 update Added to the management menu. To be able to edit the login message.
+
 [日本語の説明]  
-ログインしていない状態でアクセスすると、ログイン画面にリダイレクト。ログインすることで、アクセスしようとしていたURLへ再度リダイレクトする。 
+ログインしていない状態でアクセスすると、ログイン画面にリダイレクト。ログインすることで、アクセスしようとしていたURLへ再度リダイレクトする。
 
 2016年1月31日追記
 管理画面にメニューを追加しました。
 ログイン画面に表示するメッセージを編集できます。
-     
+
 == Installation ==  
-     
+
 1. Upload the the `wp-nologin-redirect` folder to the `/wp-content/plugins/` directory.
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. From the setting of the management screen , edit the message
-     
-     
+
+
 == Changelog ==  
+
+= 3.1.2 =
+* delete lung directory
 
 = 3.1.1 =
 * A message revises an error not to be given

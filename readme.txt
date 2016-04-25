@@ -14,13 +14,6 @@ Be to login, redirected back to the URL you were trying to access.
 
 2016-01-31 update Added to the management menu. To be able to edit the login message.
 
-[日本語の説明]
-ログインしていない状態でアクセスすると、ログイン画面にリダイレクト。ログインすることで、アクセスしようとしていたURLへ再度リダイレクトする。
-
-2016年1月31日追記
-管理画面にメニューを追加しました。
-ログイン画面に表示するメッセージを編集できます。
-
 == Installation ==
 
 1. Upload the the `wp-nologin-redirect` folder to the `/wp-content/plugins/` directory.
@@ -29,6 +22,9 @@ Be to login, redirected back to the URL you were trying to access.
 
 
 == Changelog ==
+
+= 3.1.2 =
+* delete lung directory
 
 = 3.1.1 =
 * A message revises an error not to be given
