@@ -21,6 +21,9 @@ Be to login, redirected back to the URL you were trying to access.
 管理画面にメニューを追加しました。
 ログイン画面に表示するメッセージを編集できます。
 
+2016年4月25日追記
+翻訳を[GlotPress](https://translate.wordpress.org/projects/wp-plugins/wp-nologin-redirect)に対応しました。その為lungディレクトリ、poファイル、moファイルを削除しました。
+
 == Installation ==  
 
 1. Upload the the `wp-nologin-redirect` folder to the `/wp-content/plugins/` directory.
