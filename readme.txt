@@ -23,6 +23,9 @@ Be to login, redirected back to the URL you were trying to access.
 
 == Changelog ==
 
+= 3.2 =
+* Resolve the redirect is such a problem when using the WP-CLI
+
 = 3.1.2 =
 * delete lung directory
 
