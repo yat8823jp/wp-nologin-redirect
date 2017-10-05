@@ -3,7 +3,7 @@
 Plugin Name: No Login Redirect
 Plugin URI:
 Description: 非ログイン時、ログイン画面にリダイレクトさせる
-Author: YAT, mel_cha
+Author: YAT
 Version: 3.2
 Text Domain: wp-nologin-redirect
 */
@@ -87,7 +87,7 @@ function nlr_init() {
 			$e = new WP_Error();
 
 			if ( isset( $_POST['nlrdata'] ) && $_POST['nlrdata'] ) {
-				update_option( 'nlrdata', $_POST['nlrdata'] );
+				update_option( 'nlrdata', esc_attr( $_POST['nlrdata'] ) );
 				$e->add(
 					'error',
 					__( 'saved the message', 'wp-nologin-redirect' )
