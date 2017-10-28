@@ -70,7 +70,7 @@ function nlr_add_login_message() {
 	if(! get_option( 'nlrdata' ) ) {
 			$message = __( 'Welcome to this site. Please log in to continue', 'wp-nologin-redirect' );
 	} else {
-		$message = get_option( 'nlrdata' );
+		$message = esc_attr( get_option( 'nlrdata' ) );
 	}
 
 	if ( empty( $message) ){
@@ -87,7 +87,7 @@ function nlr_init() {
 			$e = new WP_Error();
 
 			if ( isset( $_POST['nlrdata'] ) && $_POST['nlrdata'] ) {
-				update_option( 'nlrdata', esc_attr( $_POST['nlrdata'] ) );
+				update_option( 'nlrdata', $_POST['nlrdata'] );
 				$e->add(
 					'error',
 					__( 'saved the message', 'wp-nologin-redirect' )
