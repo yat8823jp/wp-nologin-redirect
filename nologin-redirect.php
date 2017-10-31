@@ -1,8 +1,11 @@
 <?php
 /**
+ * Short description
+ *
  * @package nologin-redirect
  * @version 3.3.1
  */
+
 /*
 Plugin Name: No Login Redirect
 Plugin URI:
@@ -109,11 +112,11 @@ add_filter( 'login_message', 'nlr_add_login_message' );
  * Init
  */
 function nlr_init() {
-	if ( isset( $_POST['nlr-menu'] ) && $_POST['nlr-menu'] ) {
+	if ( ! empty( $_POST['nlr-menu'] ) ) {
 		if ( check_admin_referer( 'nlr-nonce-key', 'nlr-menu' ) ) {
 			$e = new WP_Error();
 
-			if ( isset( $_POST['nlrdata'] ) && $_POST['nlrdata'] ) {
+			if ( ! empty( $_POST['nlr-menu'] ) ) {
 				$nlrdata = wp_unslash( $_POST['nlrdata'] );
 				update_option( 'nlrdata', $nlrdata );
 				$e->add(
