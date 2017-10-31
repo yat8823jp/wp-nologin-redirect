@@ -4,7 +4,7 @@ Plugin Name: No Login Redirect
 Plugin URI:
 Description: When not logging in, redirect to the login screen
 Author: YAT
-Version: 3.3
+Version: 3.3.1
 Text Domain: wp-nologin-redirect
 */
 function nlr_theme_name_script() {

@@ -33,6 +33,9 @@ Be to login, redirected back to the URL you were trying to access.
 
 == Changelog ==  
 
+= 3.3.1 =
+* Addition of escape processing
+
 = 3.3 =
 * Addition of escape processing
 
