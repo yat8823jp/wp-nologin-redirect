@@ -97,13 +97,13 @@ function nlr_add_login_message() {
 	if ( ! get_option( 'nlrdata' ) ) {
 			$message = __( 'Welcome to this site. Please log in to continue', 'wp-nologin-redirect' );
 	} else {
-		$message = esc_attr( get_option( 'nlrdata' ) );
+		$message = esc_html( get_option( 'nlrdata' ) );
 	}
 
 	if ( empty( $message ) ) {
 		return '<p class="login-attention">' . $message . '</p>';
 	} else {
-		return $message;
+		return nl2br( $message );
 	}
 }//end nlr_add_login_message()
 add_filter( 'login_message', 'nlr_add_login_message' );
