@@ -112,12 +112,12 @@ add_filter( 'login_message', 'nlr_add_login_message' );
  * Init
  */
 function nlr_init() {
-	$nlrmenu = filter_input( INPUT_POST, 'nlr-menu' );
+	$nlrmenu = filter_input( INPUT_POST, 'nlr-menu', FILTER_SANITIZE_SPECIAL_CHARS );
 	if ( $nlrmenu ) {
 		if ( check_admin_referer( 'nlr-nonce-key', 'nlr-menu' ) ) {
 			$e = new WP_Error();
 
-			$message = filter_input( INPUT_POST, 'nlrdata' );
+			$message = filter_input( INPUT_POST, 'nlrdata', FILTER_SANITIZE_SPECIAL_CHARS );
 
 			if ( $nlrmenu ) {
 				update_option( 'nlrdata', $message );
